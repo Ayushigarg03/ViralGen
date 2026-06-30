@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://viralgen-backend.onrender.com/api/$1"
+    },
+    {
+      "source": "/static/(.*)",
+      "destination": "https://viralgen-backend.onrender.com/static/$1"
+    },
+    {
+      "source": "/((?!api|static).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
